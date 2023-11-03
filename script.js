@@ -19,5 +19,8 @@ function login() {
   function closePopup(popupId) {
     var popup = document.getElementById(popupId);
     popup.style.display = "none";
-  }
   
+    // Resetar os campos de entrada
+    document.getElementById("usuario").value = "";
+    document.getElementById("senha").value = "";
+  }
